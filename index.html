@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        function showSuccessMsg() {
+            alert("✅ Thank you! Your order has been received.\nWe’ll contact you soon via WhatsApp.");
+            return true; // continue with form submission
+        }
+    </script>
+
+    <meta name="description">
+    <link rel="stylesheet" href="aaira.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/dk7u475vo/image/upload/v1748507799/WhatsApp_Image_2025-05-29_at_13.48.33_jj8lkj.jpg" class="aaira-fruits-logo" />
+            </a>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-black"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Why Choose Us?
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#menuSection" id="navItem2">Explore Menu</a>
+                    <a class="nav-link" href="#aboutSection" id="navItem3">About</a>
+                    <a class="nav-link" href="#contactSection" id="navItem4">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">Get Healthy Fruits </h1>
+            <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+            <a href="#menuSection">
+                <button class="custom-button">View Menu</button>
+            </a>
+
+            <button class="custom-outline-button" data-toggle="modal" data-target="#orderFormModal">Order Now</button>
+
+        </div>
+    </div>
+    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">Why Choose Us?</h1>
+                    <p class="wcu-section-description">
+                        We use both original recipes and classic versions of famous food
+                        items.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3"> Service</h1>
+                        <p class="wcu-card-description">
+                            We offer 100% fresh, hand-cut fruits that are hygienically packed with care.
+                            Each box is thoughtfully curated to preserve maximum nutrition, freshness, and flavor.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Fresh Fruits</h1>
+                        <p class="wcu-card-description">
+                            Our fresh fruits are carefully selected and directly sourced from trusted partner farms and farmhouses—ensuring you enjoy the true tree-to-Box experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Best Offers</h1>
+                        <p class="wcu-card-description">
+                            Enjoy exclusive discounts, seasonal combos, and fast doorstep delivery.
+                            Healthy living made easy and affordable!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="menuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Explore Menu</h1>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://7pranayama.com/wp-content/uploads/2023/02/Best-Fruits-For-Glowing-Skin-At-Any-Age-768x384.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Skin Glow Box</h1>
+                        <a href="#" class="menu-item-link" data-toggle="modal" data-target="#glowBoxModal">
+                            View Details
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://th.bing.com/th/id/OIP.V0Gg_I2RJPZxsOWr6a0s8wAAAA?pid=ImgDet&w=195&h=140&c=7&dpr=1.4" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Gym Box</h1>
+                        <a href="#" class="menu-item-link" data-toggle="modal" data-target="#gymBoxModal">
+                            View Details
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://www.apa.org/images/tile-spotlight-issue-100_tcm7-223674.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Daibetics Box</h1>
+                        <a href="#" class="menu-item-link" data-toggle="modal" data-target="#diabeticsBoxModal">
+                            View Details
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://trueremedies.com/wp-content/uploads/2018/06/home-remedies-to-boost-immunity-750x450.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Immunity Box</h1>
+                        <a href="#" class="menu-item-link" data-toggle="modal" data-target="#immunityBoxModal">
+                            View Details
+                            <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="healthy-food-section pt-5 pb-5" id="aboutSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="text-center">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" class="healthy-food-section-img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <h1 class="healthy-food-section-heading">
+                        Fresh, Healthy, Customized Fruit Boxes for Every Need
+                    </h1>
+                    <p class="healthy-food-section-description">
+                        Experience the power of nutrition with our thoughtfully curated fruit boxes —
+                        perfect for glowing skin, managing sugar levels, boosting energy, or simply
+                        staying fit. At Aira Glow & Health Box, we deliver 100% natural and chemical-free fruits,
+                        handpicked to support your unique lifestyle. Nourish your body, delight your taste buds,
+                        and embrace wellness — the way nature intended.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-us-section pt-5 pb-5">
+        <h1 class="follow-us-section-heading text-center mb-4">Follow Us</h1>
+        <div class="d-flex justify-content-center">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/aaira_glow_box?igsh=MWw2cHRmcjlxcXMxcw==" target="_blank" class="social-circle mx-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://whatsapp.com/channel/0029VbAt0Iw47Xe90QBmsc3o" target="_blank" class="social-circle mx-3">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5 bg-success" id="contactSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://res.cloudinary.com/dk7u475vo/image/upload/v1748507884/WhatsApp_Image_2025-05-29_at_13.48.33_gkv5kh.jpg" class="aaira-fruits-logo" />
+                    <h1 class="footer-section-mail-id">AAIRA Glow & Healthy Box</h1>
+                    <p class="footer-section-address">
+                        aairaglowandhealthy@gmail.com
+                    </p>
+                    <p class="footer-section-address">
+                        9121559861
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Glow Box Details Modal -->
+    <div class="modal fade" id="glowBoxModal" tabindex="-1" role="dialog" aria-labelledby="glowBoxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="glowBoxModalLabel">Glow Box Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>🍉 Included Fruits: 7 items</h6>
+                    <ul>
+                        <li>Papaya</li>
+                        <li>Pomegranate</li>
+                        <li>Kiwi</li>
+                        <li>Orange</li>
+                        <li>Avocado</li>
+                        <li>Black Grapes</li>
+                        <li>Cucumber</li>
+                        <li>Dry Fruits</li>
+                        <li>Sprouts</li>
+                        <li>Carrot</li>
+                        <li>Beetroot</li>
+                    </ul>
+                    <h6>🌟 Benefits:</h6>
+                    <table class="table table-bordered table-sm">
+                        <tr>
+                            <th>Fruit</th>
+                            <th>Benefit</th>
+                        </tr>
+                        <tr>
+                            <td>Pomegranate</td>
+                            <td>Antioxidants rich; skin bright ga untundi, wrinkles reduce chestayi</td>
+                        </tr>
+                        <tr>
+                            <td>Papaya</td>
+                            <td>Vitamin A & enzymes tho pigmentation remove, acne control</td>
+                        </tr>
+                        <tr>
+                            <td>Kiwi</td>
+                            <td>Vitamin C bomb – collagen build cheyyadam tho skin tight & glowing</td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                            <td>Vitamin C – Skin brightening, dark spots reduce chestayi</td>
+                        </tr>
+                        <tr>
+                            <td>Avocado</td>
+                            <td>Healthy fats tho skin hydrate avtundi, dryness tagguthundi</td>
+                        </tr>
+                        <tr>
+                            <td>Black Grapes</td>
+                            <td>Anti-aging & skin detoxification ki best</td>
+                        </tr>
+                        <tr>
+                            <td>Cucumber</td>
+                            <td>Skin cooling & hydration; puffiness reduce chestundi</td>
+                        </tr>
+                        <tr>
+                            <td>Dragon Fruit</td>
+                            <td>Iron + Vitamin C combo; radiant skin boost cheyyadam</td>
+                        </tr>
+                    </table>
+                    <p><strong>MRP:</strong> ₹2700 → <strong style="color: green;">Offer Price:</strong> ₹1999</p>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#orderFormModal" data-dismiss="modal">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Order Form Modal -->
+    <div class="modal fade" id="orderFormModal" tabindex="-1" role="dialog" aria-labelledby="orderFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderFormModalLabel">Complete Your Order</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://sheetdb.io/api/v1/ykpau8gywp4ea" method="POST" onsubmit="return sendWhatsAppMessage()">
+
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="data[Name]" class="form-control" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile</label>
+                            <input type="tel" name="data[Mobile]" class="form-control" placeholder="9121XXXXXX" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <textarea name="data[Address]" class="form-control" rows="3" placeholder="Your Address" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Order Done</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gym Box Modal -->
+    <div class="modal fade" id="gymBoxModal" tabindex="-1" role="dialog" aria-labelledby="gymBoxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="gymBoxModalLabel">Gym Box Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>🍎 Included Fruits: 7 items </h6>
+                    <ul>
+                        <li>Banana</li>
+                        <li>Apple</li>
+                        <li>Dates</li>
+                        <li>Sweet Lime</li>
+                        <li>Guava</li>
+                        <li>Watermelon</li>
+                        <li>Dry Fruits</li>
+                        <li>Sprouts</li>
+                        <li>Egg</li>
+                        <li>Avocado</li>
+                        <li>Papaya</li>
+                        <li>Dragon</li>
+                    </ul>
+                    <h6>💪 Benefits:</h6>
+                    <table class="table table-bordered table-sm">
+                        <tr>
+                            <th>Fruit</th>
+                            <th>Benefit</th>
+                        </tr>
+                        <tr>
+                            <td>Banana</td>
+                            <td>Instant energy; pre/post workout best</td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td>Fiber rich – stomach full ga untadi & metabolism speedup</td>
+                        </tr>
+                        <tr>
+                            <td>Dates</td>
+                            <td>Iron + glucose – stamina improve cheyyadam</td>
+                        </tr>
+                        <tr>
+                            <td>Sweet Lime</td>
+                            <td>Vitamin C + Hydration after sweating</td>
+                        </tr>
+                        <tr>
+                            <td>Guava</td>
+                            <td>Protein support + Vitamin C</td>
+                        </tr>
+                        <tr>
+                            <td>Watermelon</td>
+                            <td>Body water balance maintain cheyyadam</td>
+                        </tr>
+                        <tr>
+                            <td>Dry Fruits</td>
+                            <td>Muscle repair & recovery support chestayi</td>
+                        </tr>
+                    </table>
+                    <p><strong>MRP:</strong> ₹2700 → <strong style="color: green;">Offer Price:</strong> ₹1999</p>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#orderFormModal" data-dismiss="modal">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diabetics Box Modal -->
+    <div class="modal fade" id="diabeticsBoxModal" tabindex="-1" role="dialog" aria-labelledby="diabeticsBoxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="diabeticsBoxModalLabel">Diabetics Box Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>🍐 Included Fruits:7 items</h6>
+                    <ul>
+                        <li>Green Apple</li>
+                        <li>Guava</li>
+                        <li>Berries</li>
+                        <li>Pear</li>
+                        <li>Orange</li>
+                        <li>Papaya</li>
+                        <li>Amla</li>
+                        <li>Sprouts</li>
+                        <li>Dry Fruits</li>
+                        <li>Pomegranate</li>
+                        <li>Kiwi</li>
+                        <li>WaterMelon</li>
+                    </ul>
+                    <h6>💉 Benefits:</h6>
+                    <table class="table table-bordered table-sm">
+                        <tr>
+                            <th>Fruit</th>
+                            <th>Health Use</th>
+                        </tr>
+                        <tr>
+                            <td>Green Apple</td>
+                            <td>Low glycemic index; sugar spikes ni avoid chestundi</td>
+                        </tr>
+                        <tr>
+                            <td>Guava</td>
+                            <td>High fiber – blood sugar stabilize cheyyadam</td>
+                        </tr>
+                        <tr>
+                            <td>Berries</td>
+                            <td>Antioxidants & low sugar – safe & sweet alternative</td>
+                        </tr>
+                        <tr>
+                            <td>Pear</td>
+                            <td>Digestive friendly + blood sugar control</td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                            <td>Natural sweetness + Vitamin C</td>
+                        </tr>
+                        <tr>
+                            <td>Papaya</td>
+                            <td>Enzymes improve digestion; sugar content low</td>
+                        </tr>
+                        <tr>
+                            <td>Amla</td>
+                            <td>Diabetic control + immunity boost</td>
+                        </tr>
+                    </table>
+                    <p><strong>MRP:</strong> ₹2700 → <strong style="color: green;">Offer Price:</strong> ₹1999</p>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#orderFormModal" data-dismiss="modal">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Immunity Box Modal -->
+
+    <div class="modal fade" id="immunityBoxModal" tabindex="-1" role="dialog" aria-labelledby="immunityBoxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <h5 class="modal-title font-weight-bold" id="immunityBoxModalLabel">Immunity Box Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>🍊 Included Fruits:</h6>
+                    <ul>
+                        <li>Orange</li>
+                        <li>Amla</li>
+                        <li>Lemon</li>
+                        <li>Papaya</li>
+                        <li>Kiwi</li>
+                        <li>Pomegranate</li>
+                        <li>Pineapple</li>
+                        <li>Dragon Fruit</li>
+                        <li>Sprouts</li>
+                        <li>Dry Fruits</li>
+                        <li>Avocado</li>
+                        <li>Egg</li>
+                    </ul>
+                    <h6>🛡️ Benefits:</h6>
+                    <table class="table table-bordered table-sm">
+                        <tr>
+                            <th>Fruit</th>
+                            <th>Benefit</th>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                            <td>Vitamin C boost – cold, flu prevention</td>
+                        </tr>
+                        <tr>
+                            <td>Amla</td>
+                            <td>Superfood – immunity strengthen chestundi</td>
+                        </tr>
+                        <tr>
+                            <td>Lemon</td>
+                            <td>Detox drink ki perfect, Vitamin C rich</td>
+                        </tr>
+                        <tr>
+                            <td>Papaya</td>
+                            <td>Digestion + immunity twin benefits</td>
+                        </tr>
+                        <tr>
+                            <td>Kiwi</td>
+                            <td>Infections tho fight cheyyadam</td>
+                        </tr>
+                        <tr>
+                            <td>Pomegranate</td>
+                            <td>Blood purification + immunity boost</td>
+                        </tr>
+                        <tr>
+                            <td>Pineapple</td>
+                            <td>Anti-inflammatory & vitamin rich</td>
+                        </tr>
+                        <tr>
+                            <td>Ginger Slice</td>
+                            <td>Natural immunity booster (small piece matrame)</td>
+                        </tr>
+                    </table>
+                    <p><strong>MRP:</strong> ₹2700 → <strong style="color: green;">Offer Price:</strong> ₹1999</p>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#orderFormModal" data-dismiss="modal">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function sendWhatsAppMessage() {
+            // Optional: Get user name if needed
+            let name = document.querySelector('input[name="data[Name]"]').value;
+            let mobile = document.querySelector('input[name="data[Mobile]"]').value;
+
+            // WhatsApp message content
+            let message = `Hello ${name}, thank you for ordering from Aaira Glow & Healthy Box! 👏\nWe will contact you shortly.`;
+
+            // Open WhatsApp with pre-filled message (you can change the number below to yours)
+            let whatsappURL = `https://wa.me/919121559861?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+
+            // Allow form to submit
+            return true;
+        }
+    </script>
+
+            
+    <!-- Bootstrap and other scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Your custom JS file -->
+    <script src="aaira.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.aaira-fruits-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+#navItem1 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: white;
+    font-family: "Roboto";
+}
+
+.banner-section-bg-container {
+    background-image: url("https://i.pinimg.com/736x/8d/e5/5a/8de55a489bae9f0f174145165578c3b6.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: Black;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.banner-caption {
+    color: Black;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.custom-button {
+    color: white;
+    background-color: green;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.custom-outline-button {
+    color: White;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: green;
+    border-radius: 8px;
+}
+
+.explore-menu-section {
+    background-color: white;
+}
+
+.menu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-item-image {
+    width: 120px;
+    height: 180px;
+    border-radius: 16px;
+}
+
+.menu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.menu-item-link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-item-card {
+    border-radius: 16px;
+}
+
+.healthy-food-section {
+    background-color: #f9fbfe;
+}
+
+.healthy-food-section-img {
+    width: 270px;
+}
+
+.healthy-food-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.healthy-food-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.custom-button {
+    color: white;
+    background-color: green;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #2ecc71;
+}
+
+.footer-section-mail-id {
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: white;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .banner-heading {
+        font-size: 30px;
+    }
+
+    .banner-caption {
+        font-size: 18px;
+    }
+}
+
+.wcu-card {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e5eaf4;
+}
+
+.wcu-card-image {
+    width: 90px;
+    height: 90px;
+}
+
+.wcu-card-title {
+    color: #323f4b;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.wcu-card-description {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #7b8794;
+}
+
+.menu-item-card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #145214;
+}
+
+
+.social-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #fcf8eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #000;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.social-circle:hover {
+    background-color: #d0f0c0;
+    color: #28a745;
+}
