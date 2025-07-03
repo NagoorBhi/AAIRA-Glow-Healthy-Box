@@ -616,6 +616,22 @@
 
     <!-- Your custom JS file -->
     <script src="aaira.js"></script>
+    <script>
+  function storeSelectedPlan() {
+    const selectedPlan = document.querySelector('input[name="glowBoxPlan"]:checked').value;
+    // Store it in localStorage or pass to form
+    localStorage.setItem('selectedGlowBoxPlan', selectedPlan);
+  }
+
+  // Optional: Populate the form with selected plan
+  document.addEventListener('DOMContentLoaded', function () {
+    const planInput = document.getElementById('selectedPlanField');
+    if (planInput) {
+      planInput.value = localStorage.getItem('selectedGlowBoxPlan') || '';
+    }
+  });
+</script>
+
 
 
 </body>
